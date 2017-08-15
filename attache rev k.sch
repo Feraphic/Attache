@@ -326,12 +326,12 @@ $EndComp
 $Comp
 L D D9
 U 1 1 5911A364
-P 4500 5350
-F 0 "D9" H 4350 5300 60  0000 C CNN
-F 1 "D" V 4650 5300 60  0001 C CNN
-F 2 "keyboard_parts:D_SOD123_axial" H 4500 5350 60  0001 C CNN
-F 3 "" H 4500 5350 60  0000 C CNN
-	1    4500 5350
+P 4600 5350
+F 0 "D9" H 4450 5300 60  0000 C CNN
+F 1 "D" V 4750 5300 60  0001 C CNN
+F 2 "keyboard_parts:D_SOD123_axial" H 4600 5350 60  0001 C CNN
+F 3 "" H 4600 5350 60  0000 C CNN
+	1    4600 5350
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2926,7 +2926,7 @@ Wire Wire Line
 	4500 5450 4500 5400
 Connection ~ 4500 5450
 Wire Wire Line
-	4500 5200 4500 5150
+	4500 5150 4500 5300
 Wire Wire Line
 	4500 5000 4500 4950
 Connection ~ 4500 5000
@@ -3506,8 +3506,6 @@ Connection ~ 4700 5600
 Connection ~ 7900 5600
 Connection ~ 11100 5600
 Connection ~ 11900 5600
-Wire Wire Line
-	3100 2250 3100 5700
 Connection ~ 3700 5650
 Wire Wire Line
 	4500 2500 4500 2550
@@ -3516,4 +3514,42 @@ Wire Wire Line
 Connection ~ 4500 2800
 Connection ~ 3900 2500
 NoConn ~ 9400 9300
+$Comp
+L KEYSW K112
+U 1 1 59928C28
+P 4200 5300
+F 0 "K112" H 4150 5300 60  0000 C CNN
+F 1 "KEYSW" H 4200 5200 60  0001 C CNN
+F 2 "cherry:SW_PCB_2PIN" H 4200 5300 60  0001 C CNN
+F 3 "" H 4200 5300 60  0000 C CNN
+	1    4200 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L KEYSW K111
+U 1 1 599290BF
+P 3400 5400
+F 0 "K111" H 3350 5400 60  0000 C CNN
+F 1 "KEYSW" H 3400 5300 60  0001 C CNN
+F 2 "cherry:SW_PCB_2PIN" H 3400 5400 60  0001 C CNN
+F 3 "" H 3400 5400 60  0000 C CNN
+	1    3400 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2250 3100 5700
+Connection ~ 3900 5300
+Wire Wire Line
+	4500 5200 4600 5200
+Connection ~ 4500 5200
+Wire Wire Line
+	4500 5400 4600 5400
+Connection ~ 3100 5400
+Wire Wire Line
+	3700 5400 3700 5350
+Wire Wire Line
+	3700 5350 3750 5350
+Wire Wire Line
+	3750 5350 3750 5200
+Connection ~ 3750 5200
 $EndSCHEMATC
